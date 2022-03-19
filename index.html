@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FrontEnd Component Showcase</title>
+    <style>
+      body {
+        background: #1b1b20;
+        font-family: "Poppins";
+        margin: 0;
+
+        display: grid;
+        place-content: center;
+        height: 100vh;
+      }
+
+      .container {
+        margin: 0 4em;
+
+        display: flex;
+        gap: 1em;
+
+        justify-content: center;
+      }
+
+      .card {
+        background: white;
+        margin-bottom: 2em;
+        padding: 4em;
+      }
+
+      a {
+        color: #0063e4;
+        font-size: 1.3rem;
+        text-decoration: none;
+        margin-top: 1em;
+        display: inline-block;
+        font-weight: bold;
+        padding: 0.5em;
+        margin-left: -0.5em;
+        position: relative;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+      }
+
+      a:before,
+      a:after {
+        position: absolute;
+        content: "";
+        border-bottom: 3px solid #0063e4;
+        border-radius: 1em;
+        bottom: 0.3em;
+        -webkit-transition: -webkit-transform 0.5s
+          cubic-bezier(0.075, 0.82, 0.165, 1);
+        transition: -webkit-transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+        transition: transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+        transition: transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1),
+          -webkit-transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+      }
+
+      a:before {
+        width: 1em;
+        -webkit-transform-origin: left;
+        transform-origin: left;
+      }
+
+      a:after {
+        width: 82%;
+        left: 1em;
+        -webkit-transform: translateX(110%);
+        transform: translateX(110%);
+      }
+
+      a:hover:before {
+        -webkit-transform: scaleX(0.3);
+        transform: scaleX(0.3);
+      }
+
+      a:hover:after {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+      }
+      /*# sourceMappingURL=style.css.map */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <h1>BlurryLoading</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam,
+          maiores. Doloribus veniam vitae mollitia similique.
+        </p>
+        <a href="/BlurryLoading/index.html">Try for yourself.</a>
+      </div>
+      <div class="card">
+        <h1>CSS Image HoverEffect</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam,
+          maiores. Doloribus veniam vitae mollitia similique.
+        </p>
+        <a href="./CSS-Image-HoverEffect/index.html">See for yourself.</a>>
+      </div>
+      <div class="card">
+        <h1>Animated Links Effect</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam,
+          maiores. Doloribus veniam vitae mollitia similique.
+        </p>
+        <a href="./Animated-Links/index.html">Take a look at</a>
+      </div>
+    </div>
+  </body>
+</html>
